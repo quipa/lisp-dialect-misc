@@ -29,9 +29,9 @@ Miscellaneous code, hacks and resources for Lisp Dialects (Racket, Scheme, Cloju
 * [(sixth RacketCon) St. Louis, Missouri, 18 September  2016](https://con.racket-lang.org/2016/)
     * [Talks on YouTube](https://www.youtube.com/watch?v=nOyIKCszNeI&list=PLXr4KViVC0qKSiKGO6Vz9EtxUfKPb1Ma0)
 * [(fifth RacketCon) St. Louis, Missouri, 27 September 2015](https://con.racket-lang.org/2015/)
-    * [Talks on YouTube](https://www.youtube.com/watch?v=JnczIyPXGfc&list=PLXr4KViVC0qJAsNuDeQzhFDjMK1gEdls8]
+    * [Talks on YouTube](https://www.youtube.com/watch?v=JnczIyPXGfc&list=PLXr4KViVC0qJAsNuDeQzhFDjMK1gEdls8)
     https://con.racket-lang.org/2014/
-* [(fourth RacketCon) St. Louis, Missouri, 20 September 2014]
+* [(fourth RacketCon) St. Louis, Missouri, 20 September 2014](https://con.racket-lang.org/2014/)
     * [Talks on YouTube](https://www.youtube.com/watch?v=2ZrM0aYaqJM&list=PLXr4KViVC0qI9t3lizitiFJ1cFIeN2Gdh)
 * [RacketCon 2013, Boston, Massachusetts, 29 September 2013](https://con.racket-lang.org/2013/)
     * [Talks on YouTube](https://www.youtube.com/watch?v=37owCjWnkK0&list=PLXr4KViVC0qLyXpinlARzSDWaQTCzaGw3)
