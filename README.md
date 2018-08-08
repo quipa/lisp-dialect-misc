@@ -11,8 +11,19 @@ Miscellaneous code, hacks and resources for Lisp Dialects (Racket, Scheme, Cloju
 * [racket-mode for Emacs](https://github.com/greghendershott/racket-mode)
 * [vim-racket](https://github.com/wlangstroth/vim-racket)
 
-### Multiple
+### General/Multiple
 * [tooling in geany for lisp dialects](https://github.com/quipa/geany/tree/lisp_dialects) (work in progress)
+
+## Compilers/Interpreters
+
+### Learning & Education
+* [(How to Write a (Lisp) Interpreter (in Python)), Peter Norvig](http://norvig.com/lispy.html)
+* [(An ((Even Better) Lisp) Interpreter (in Python)), Peter Norvig](http://norvig.com/lispy2.html)
+* [mal - Make a Lisp](https://github.com/kanaka/mal)
+* [Build Your Own Lisp](http://www.buildyourownlisp.com/)
+* [Write Yourself a Scheme in 48 Hours](https://en.wikibooks.org/wiki/Write_Yourself_a_Scheme_in_48_Hours)
+* [Write You A Scheme, Version 2.0, Wespiser](https://wespiser.com/writings/wyas/00_overview.html)
+* [Scheme from Scratch - Introduction, peter.michaux.ca](http://peter.michaux.ca/articles/scheme-from-scratch-introduction)
 
 ## Resources
 
