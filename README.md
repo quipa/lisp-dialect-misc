@@ -1,5 +1,5 @@
 # lisp-dialect-misc
-Miscellaneous code, hacks and resources for Lisp Dialects (Racket, Scheme, Clojure)
+Miscellaneous code, hacks and resources for Lisp Dialects (Racket, Scheme, Clojure) 
 
 ## Desktop
 
