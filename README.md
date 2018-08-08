@@ -1,6 +1,10 @@
 # lisp-dialect-misc
 Miscellaneous code, hacks and resources for Lisp Dialects (Racket, Scheme, Clojure)
 
+## Desktop
+
+[Add Racket mimetype for freedesktop.org compliant desktop](desktop/install_racket_mimetype.sh)
+
 ## Editors
 
 ### Racket
