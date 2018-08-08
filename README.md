@@ -3,13 +3,13 @@ Miscellaneous code, hacks and resources for Lisp Dialects (Racket, Scheme, Cloju
 
 ## Desktop
 
-[Add Racket mimetype for freedesktop.org compliant desktop](desktop/install_racket_mimetype.sh)
+* [Add Racket mimetype for freedesktop.org compliant desktop](desktop/install_racket_mimetype.sh)
 
 ## Editors
 
 ### Racket
 * [racket-mode for Emacs](https://github.com/greghendershott/racket-mode)
-* [racket tooling for vim](https://github.com/wlangstroth/vim-racket)
+* [vim-racket](https://github.com/wlangstroth/vim-racket)
 
 ### Multiple
 * [tooling in geany for lisp dialects](https://github.com/quipa/geany/tree/lisp_dialects) (work in progress)
