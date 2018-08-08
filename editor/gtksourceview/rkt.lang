@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+ This file is part of GtkSourceView
+
+ Author: <Maxim Jaffe <maxim_jaffe@hotmail.com>
+ Copyright (C) 2018 Maxim Jaffe
+
+ GtkSourceView is free software; you can redistribute it and/or
+ modify it under the terms of the GNU Lesser General Public
+ License as published by the Free Software Foundation; either
+ version 2.1 of the License, or (at your option) any later version.
+
+ GtkSourceView is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+ Lesser General Public License for more details.
+
+ You should have received a copy of the GNU Lesser General Public License
+ along with this library; if not, see <http://www.gnu.org/licenses/>.
+
+-->
+<language id="racket" name="Racket" version="2.0" _section="Script">
+<metadata>
+  <property name="mimetypes">text/x-racket;application/x-racket</property>
+  <property name="globs">*.rkt</property>
+  <property name="line-comment-start">;</property>
+  <property name="block-comment-start">#|</property>
+  <property name="block-comment-end">|#</property>
+</metadata>
+
+<styles>
+<style id="comment"         name="Comment"      mapt-to="def:comment"/>
+  <style id="boolean"       name="Boolean"      map-to="def:boolean"/>
+  <style id="string"        name="String"       map-to="def:string"/>
+  <style id="char"          name="Character"    map-to="def:character"/>
+  <style id="keyword"       name="Keyword"      map-to="def:keyword"/>
+  <style id="function"      name="Function"     map-to="def:function"/>
+  <style id="require-file"  name="Required File" map-to="def:string"/>
+<!--  <style id="type" name="Data Type" map-to="def:type"/>-->
+</styles>
+
+<definitions>
+
+  <context id="line-comment" style-ref="comment" end-at-line-end="true" class="comment">
+    <start>;</start>
+    <include>
+      <context ref="def:in-comment"/>
+    </include>
+  </context>
+  
+  <context id="comment-multiline" style-ref="comment" class="comment">
+    <start>#|</start>
+    <end>|#</end>
+    <include>
+      <context ref="def:in-comment"/>
+    </include>
+  </context>
+
+  <context ref="def:decimal"/>
+  <context ref="def:float"/>
+
+  <context id="boolean-value" style-ref="boolean">
+    <match>#[ft]</match>
+  </context>
+
+  <context id="char" end-at-line-end="true" style-ref="string">
+    <match>#\\[^\s]*</match>
+  </context>
+  
+  <context id="keywords" style-ref="keyword" first-line-only="true" once-only="true">
+    <keyword>#lang</keyword>
+  </context>
+
+  <context id="string" style-ref="string" class="string">
+    <start>"</start>
+    <end>"</end>
+    <include>
+      <context ref="def:escape"/>
+    </include>
+  </context>
+
+  <context id="types" style-ref="type">
+    </keyword>
+  </context>
+  <!--  <context id="expression-comment" style-ref="comment">-->
+  <!--    <start>-->
+
+  <context id="racket" class="no-spell-check">
+    <include>
+      <context ref="line-comment"/>
+      <context ref="comment-multiline">
+      <context ref="string"/>
+      <context ref="keyword"/>
+      <context ref="function"/>
+      <context ref="boolean-value"/>
+      <context ref="char"/>
+    </include>
+  </context>
+  
+
+</definitions>
